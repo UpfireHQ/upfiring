@@ -9,7 +9,6 @@ The main goal of this decentralized application is to enable users to directly e
 ### Further Updates
 
 ```
-This README will be updated with more information in the coming weeks. 
-ve examples
+This README will be updated with more information in the coming weeks.
 ```
 
