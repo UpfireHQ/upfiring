@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15">
+    <g fill="#ACACCC" fill-rule="evenodd">
+        <path d="M2 2h12v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm4 3a1 1 0 0 0-1 1v5a1 1 0 0 0 2 0V6a1 1 0 0 0-1-1zm4 0a1 1 0 0 0-1 1v5a1 1 0 0 0 2 0V6a1 1 0 0 0-1-1z"/>
+        <rect width="16" height="2" y="2" rx="1"/>
+        <path d="M5 2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2"/>
+    </g>
+</svg>

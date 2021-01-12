@@ -1,0 +1,32 @@
+{
+  "name": "blockchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "flattener:upfiring": "./node_modules/.bin/truffle-flattener contracts/Upfiring.sol > build/Upfiring.sol",
+    "flattener:store": "./node_modules/.bin/truffle-flattener contracts/UpfiringStore.sol > build/UpfiringStore.sol",
+    "flattener": "npm run flattener:upfiring & npm run flattener:store",
+    "compile": "./node_modules/.bin/truffle compile",
+    "test": "./node_modules/.bin/truffle test",
+    "verify": "./node_modules/.bin/truffle verify",
+    "migrate": "./node_modules/.bin/truffle migrate",
+    "migrate:rinkeby": "./node_modules/.bin/truffle migrate --network rinkeby",
+    "migrate:live": "./node_modules/.bin/truffle migrate --network live",
+    "start": "./node_modules/.bin/testrpc --account=\"0x397932b521f9da17d13ca934aaa017bc1226c9ab2f4deaa82aa8dc68e16985b7,10000000000000000000000000000\" --account=\"0x0cfd9cd9e0d459c629d6c67b6476e17c781770af5ad2cc42171986a59d1b81ef,100000000000000000000000\" --account=\"0xad1f9e55f5d74b0e2e8477a71a518a2b3dfa3e3c9849013b4b802a17c9f51101,100000000000000000000000\" "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ethereumjs-testrpc": "^6.0.3",
+    "ethereumjs-util": "^5.1.5",
+    "ethereumjs-wallet": "^0.6.0",
+    "truffle": "^4.1.3",
+    "truffle-flattener": "^1.2.5",
+    "truffle-wallet-provider": "0.0.5",
+    "zeppelin-solidity": "1.8.0"
+  }
+}

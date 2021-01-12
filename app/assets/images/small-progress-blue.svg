@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="10px" viewBox="0 0 150 10" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="62.3728143%" y1="50%" x2="0.949374382%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#2B2B2B" offset="0%"></stop>
+            <stop stop-color="#2B2B2B" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="97.7339764%" y1="-5.55111512e-15%" x2="1.11022302e-14%" y2="97.7339764%" id="linearGradient-2">
+            <stop stop-color="#0FC9E3" offset="0%"></stop>
+            <stop stop-color="#078192" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Up_UI_f_download" transform="translate(-381.000000, -75.000000)" fill-rule="nonzero">
+            <g id="Group-7" transform="translate(381.000000, 75.000000)">
+                <polygon id="path14_fill-copy" fill="url(#linearGradient-1)" points="0 0 150 0 150 10 0 10"></polygon>
+                <polygon id="path14_fill-copy" fill="url(#linearGradient-2)" points="0 0 114 0 114 10 0 10"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

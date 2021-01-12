@@ -1,0 +1,12 @@
+export const TIME_UPDATE_PROGRESS = 1000;
+export const TIME_CIRCLE_TIMEOUT = 1;
+export const TIME_CIRCLE_INTERVAL = 10000;
+export const TIME_CIRCLE_FILES_INTERVAL = 2000;
+export const TIME_WALLET_TIMEOUT = 1;
+export const TIME_WALLET_INTERVAL = 20000;
+export const TIME_UNPACK_TIMEOUT = 5 * 60 * 1000;
+
+export const TIME_DOWNLOAD_SPEED = 2000;
+export const TIME_INTERNET_CONNECTION = 2000;
+export const TIME_CONTRACT_PROGRESS = 2000;
+export const TIME_READY = 500;

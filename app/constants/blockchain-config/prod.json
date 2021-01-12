@@ -1,0 +1,6 @@
+{
+  "tokenContract": "0xea097a2b1db00627b2fa17460ad260c016016977",
+  "upfiringContract": "0x2de0b799ae86c3cbc5c26c148681a45ed4f09b1e",
+  "providerUrl": "https://mainnet.infura.io",
+  "etherscanUrl": "https://etherscan.io"
+}

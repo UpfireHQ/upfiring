@@ -1,0 +1,7 @@
+{
+  "UPLOADS": "/updates",
+  "DOWNLOADS": "/downloads",
+  "COMPLETED": "/completed",
+  "WALLET": "/wallet",
+  "SETTINGS": "/settings"
+}

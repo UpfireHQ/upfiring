@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Upfiring</title>
+  <script>
+    (function () {
+      if (!process.env.HOT) {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = './dist/style.css';
+        // HACK: Writing the script path should be done with webpack
+        document.getElementsByTagName('head')[0].appendChild(link);
+      }
+    }());
+  </script>
+  <style>
+    @keyframes example {
+      0% {
+        transform: scale(1)
+      }
+      50% {
+        transform: scale(1.2)
+      }
+      100% {
+        transform: scale(1)
+      }
+    }
+
+    .introduction-screen {
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #17181C;
+      animation-name: example;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+    }
+
+    .introduction-screen > introduction-logo {
+      width: 30%;
+    }
+  </style>
+  <style> ::selection {
+    background: transparent; /* WebKit/Blink Browsers */
+  } </style>
+</head>
+<body>
+<div id="root"></div>
+<div class="introduction-screen" id="introduction-screen">
+  <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+    <defs>
+      <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFA072"/>
+        <stop offset="79.374%" stop-color="#DE2229"/>
+        <stop offset="100%" stop-color="#DE2229"/>
+      </linearGradient>
+      <linearGradient id="b" x1="50%" x2="50%" y1="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFA072"/>
+        <stop offset="69.26%" stop-color="#DE2229"/>
+        <stop offset="100%" stop-color="#DE2229"/>
+      </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+      <path fill="#000" fill-opacity="0" d="M0 0h128v128H0z"/>
+      <path fill="url(#a)"
+            d="M40.051 14.969c-1.07 6.923-3.507 13.155-7.089 19.064-5.813 9.592-13.368 18.038-19.174 27.617-3.087 5.094-6.24 10.276-6.893 16.4-2.38 6.274-2.44 12.643-1.453 19.228 1.184 7.909 4.516 14.686 10.4 20.028 9.987 9.069 22.275 11.525 35.426 10.463 4.79-.386 9.557-1.8 13.693-4.162 15.295-8.73 20.294-26.544 16.147-41.296-3.442-12.242-11.536-19.446-23.772-18.427-3.936.328-9.84 2.775-11.59 5.22 8.031 2.247 13.695 7.115 16.8 14.765 3.182 7.837 2.77 15.69.053 23.577-2.781 8.075-13.658 15.138-21.289 13.699-13.25-2.499-22.769-18.037-19.12-30.864 4.366-15.354 16.187-25.433 25.699-37.917 4.998-6.56 8.86-13.612 8.47-22.151-.22-4.805-1.722-9.327-4.12-13.461C48.792 10.802 44.472 5.475 38.922.14c1.123 5.46 1.884 9.951 1.13 14.829"
+            transform="translate(22.26)"/>
+      <path fill="url(#b)"
+            d="M67.945 54.897c5.139 6.224 12.741 10.633 15.233 19.028 0-.307.017-.615.018-.922v-.052c0-.174-.007-.347-.025-.52-.882-8.276-4.812-15.116-10.064-21.501-3.486-4.24-7.502-8.424-7.157-14.673-4.81 6.773-2.21 13.545 1.995 18.64M5.284 59.696C1.837 66.626.018 73.79 0 81.247v.217c.005 1.94.131 3.901.383 5.882.656-7.812 3.237-14.977 6.494-21.996 2.888-6.223 5.013-12.633 2.294-19.553.161 5.032-1.728 9.555-3.887 13.899M43.882 113.136c-2.192.517-4.682.086-6.62 1.61 6.976 4.098 15.623-.136 18.872-4.62 2.741-3.784 2.317-9.336-1.1-11.778.706 6.82-2.943 12.853-11.152 14.788M18.226 47.227c3.312-1.99 5.09-4.557 6.83-7.558 3.016-5.196.386-9.259-7.242-11.243 4.462 6.115 2.72 12.333.412 18.801M49.326 59.977c9.52-2.98 10.926-4.29 7.49-10.936-.399 4.898-4.535 7.35-7.49 10.936"
+            transform="translate(22.26)"/>
+    </g>
+  </svg>
+</div>
+<script>
+  {
+    const scripts = [];
+
+    // Dynamically insert the DLL script in development env in the
+    // renderer process
+    if (process.env.NODE_ENV === 'development') {
+      scripts.push('../dll/renderer.dev.dll.js');
+    }
+
+    // Dynamically insert the bundled app script in the renderer process
+    const port = process.env.PORT || 1212;
+    scripts.push(
+      (process.env.HOT)
+        ? 'http://localhost:' + port + '/dist/renderer.dev.js'
+        : './dist/renderer.prod.js'
+    );
+
+    document.write(
+      scripts
+        .map(script => `<script defer src="${script}"><\/script>`)
+        .join('')
+    );
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="19px" viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>cancel-btn</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UpUI-upload-2v" transform="translate(-1348.000000, -744.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="Group-7" transform="translate(148.000000, 743.000000)">
+                <g id="Group-5-Copy" transform="translate(30.000000, 0.000000)">
+                    <g id="Group-2" transform="translate(176.000000, 1.000000)">
+                        <g id="Group-3" transform="translate(942.000000, 0.000000)">
+                            <g id="cancel-btn" transform="translate(51.000000, 0.000000)">
+                                <polygon id="path24_fill" transform="translate(10.907172, 9.301280) rotate(45.000000) translate(-10.907172, -9.301280) " points="9.36009524 -2.30518737 12.454248 -2.30518737 12.454248 20.9077476 9.36009524 20.9077476"></polygon>
+                                <polygon id="path24_fill" transform="translate(10.298560, 9.461892) rotate(-45.000000) translate(-10.298560, -9.461892) " points="8.75148332 -2.14457557 11.8456361 -2.14457557 11.8456361 21.0683594 8.75148332 21.0683594"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

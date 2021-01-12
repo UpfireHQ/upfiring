@@ -1,0 +1,6 @@
+{
+  "tokenContract": "0xed811a531b551c18926d81058c803830c933503f",
+  "upfiringContract": "0xe87e3db53326629dbd33e23fee2cc31b8466da8d",
+  "providerUrl": "https://rinkeby.infura.io",
+  "etherscanUrl": "https://rinkeby.etherscan.io"
+}

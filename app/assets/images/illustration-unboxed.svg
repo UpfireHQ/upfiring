@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="130" height="95" viewBox="0 0 130 95">
+    <defs>
+        <path id="b" d="M50 37.3l12.416 8.575L100 24.242l-12.121-8.585z"/>
+        <filter id="a" width="212%" height="285.3%" x="-56%" y="-86%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="9"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+        </filter>
+        <path id="d" d="M0 22.655l12.582-6.493 37.31 21.335-11.394 7.729z"/>
+        <filter id="c" width="212.2%" height="292.7%" x="-56.1%" y="-89.5%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="9"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#4E61D0" d="M27.626 69.515l37.344 21.9V68.181L27.781 45.96z"/>
+        <path fill="#4152B9" d="M102.344 70.02L65 91.588V68.355l37.19-21.89z"/>
+        <path fill="#7184F3" d="M16.515 41.225l11.375 6.077L42.4 39.697l-10.57-7.374z"/>
+        <path fill="#6073E3" d="M114.495 40.404l-11.616 6.06-14.647-9.243 10.093-6.413z"/>
+        <path fill="#95461C" d="M30.657 45.455v3.03l-3.03-1.515z"/>
+        <g transform="translate(15 30.808)">
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <use fill="#6073E3" xlink:href="#b"/>
+        </g>
+        <g transform="translate(15 30.808)">
+            <use fill="#000" filter="url(#c)" xlink:href="#d"/>
+            <use fill="#7184F3" xlink:href="#d"/>
+        </g>
+        <path fill="#95461C" d="M99.848 44.444v3.536l3.03-1.515z"/>
+        <g>
+            <path fill="#CD181E" d="M30.657 19.697v28.788L65 68.182V38.889z"/>
+            <path fill="#FF5258" d="M99.848 19.697l-.026 28.788L65 68.687V38.889z"/>
+            <path fill="#1C9DF4" d="M99.848 19.697L65 68.182V38.889z"/>
+            <path fill="#E02027" d="M30.657 19.697L65.035 0l34.813 19.697-34.813 19.192z"/>
+            <path fill="#CD181E" d="M30.657 19.697L65 68.182V38.889z"/>
+            <path fill="#F44249" d="M99.848 29.293L65 68.687V47.475z"/>
+        </g>
+        <g>
+            <path fill="#740408" d="M99.848 19.697v9.09L65 47.98v-9.091z"/>
+            <path fill="#FFF" d="M65 38.889l5.556 6.06 3.03-1.515-5.556-6.06zM71.566 35.354l5.555 6.06 3.03-1.515-5.555-6.06zM78.131 31.313l5.556 6.06 3.03-1.514-5.555-6.061zM84.697 27.778l5.556 6.06 3.03-1.515-5.556-6.06zM91.263 24.242l5.555 6.061 3.03-1.515-5.555-6.06z"/>
+        </g>
+    </g>
+</svg>

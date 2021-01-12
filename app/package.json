@@ -1,0 +1,34 @@
+{
+  "name": "upfiring-app",
+  "productName": "Upfiring",
+  "version": "1.1.1",
+  "description": "Upfiring",
+  "main": "./main.prod.js",
+  "author": {
+    "name": "Upfiring",
+    "email": "dev@upfiring.com",
+    "url": "https://upfiring.com"
+  },
+  "scripts": {
+    "electron-rebuild": "node -r babel-register ../internals/scripts/ElectronRebuild.js",
+    "postinstall": "yarn electron-rebuild"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "amcharts3": "^3.21.14",
+    "apisauce": "^1.0.1",
+    "ethereumjs-tx": "^1.3.7",
+    "ethereumjs-util": "^6.0.0",
+    "ethereumjs-wallet": "^0.6.3",
+    "keccak": "^2.0.0",
+    "scrypt": "^6.0.3",
+    "secp256k1": "^3.6.0",
+    "sha3": "^2.0.0",
+    "ssb-ws": "^5.1.1",
+    "ut_message": "^1.0.1",
+    "ut_metadata": "^3.3.0",
+    "ut_pex": "^1.2.1",
+    "web3": "^1.0.0-beta.37",
+    "webtorrent": "^0.103.0"
+  }
+}
